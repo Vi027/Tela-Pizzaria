@@ -1,0 +1,67 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Pizzaria</title>
+    <link rel="stylesheet" href="cardapio.css">
+    <script>
+        function showPaymentOptions() {
+            document.getElementById('payment-options').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="title">Cardápio de Pizzas</h1>
+        
+        <div class="menu-item">
+            <img src="margarita.jpg" alt="Pizza Margherita">
+            <div class="menu-text">
+                <span class="pizza-name">Pizza Margherita</span>
+                <p class="description">Molho de tomate, mussarela, manjericão fresco e azeite.</p>
+                <span class="price">R$ 35,00</span>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="calabresa.jpg" alt="Pizza Calabresa">
+            <div class="menu-text">
+                <span class="pizza-name">Pizza Calabresa</span>
+                <p class="description">Mussarela, calabresa fatiada, cebola e orégano.</p>
+                <span class="price">R$ 38,00</span>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="queijo.jpg" alt="Pizza Quatro Queijos">
+            <div class="menu-text">
+                <span class="pizza-name">Pizza Quatro Queijos</span>
+                <p class="description">Mussarela, provolone, parmesão e gorgonzola.</p>
+                <span class="price">R$ 42,00</span>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="portuguesa.jpg" alt="Pizza Portuguesa">
+            <div class="menu-text">
+                <span class="pizza-name">Pizza Portuguesa</span>
+                <p class="description">Mussarela, presunto, ovos, cebola, ervilha e azeitonas.</p>
+                <span class="price">R$ 40,00</span>
+            </div>
+        </div>
+        <a href="cadastropizza.html">
+            <button class="button" onclick="showPaymentOptions()">Personalizar Pedido</button>
+        </a>
+        <button class="button" onclick="showPaymentOptions()">Fazer Pedido</button>
+        <div id="payment-options" class="payment-options" style="display: none;">
+            <h2>Formas de Pagamento</h2>
+            <label><input type="radio" name="payment" value="pix"> PIX</label>
+            <label><input type="radio" name="payment" value="dinheiro"> Dinheiro</label>
+            <label><input type="radio" name="payment" value="cartao"> Cartão</label>
+            
+        </div>
+    </div>
+</body>
+</html>
